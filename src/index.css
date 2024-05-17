@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resizable-component {
+  position: relative;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.resize-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 9999;
+}
+
+.resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: nwse-resize; /* Use diagonal resize cursor */
+  background-color: #ccc;
+}
+
+.content {
+  padding: 10px;
+}
+
+
